@@ -12,7 +12,24 @@ This project is an end-to-end test automation suite using Playwright for testing
 * Generating Reports
 * Configuration
 <br>
-## Project Structure <br>
+Project Structure <br>
 The key files and folders in this project include:
-<br>
+```
+├── pageObject/          # Folder containing Page Object Model classes
+│   ├── POManager.js     # Manager class to initialize and manage page objects
+│   ├── LoginPage.js     # Page object for login functionality
+│   ├── WalletPage.js    # Page object for wallet functionality
+│   └── PlanPage.js      # Page object for plan functionality
+├── tests/               # Folder containing test scripts
+│   ├── Login.spec.js    # Test file for login functionality
+│   ├── Wallet.spec.js   # Test file for wallet functionality
+│   └── Plan.spec.js     # Test file for plan functionality
+├── utils/               # Utility folder for configuration and helper functions
+│   ├── env.js           # Environment configuration file
+│   └── globalSetup.js   # Global setup file for test initialization
+├── .gitignore           # Git ignore file
+├── playwright.config.js # Playwright configuration file
+├── package.json         # Project's package configuration
+└── README.md            # Documentation for the project
+```
 ## Prerequisites
