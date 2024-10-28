@@ -1,0 +1,26 @@
+{
+  "name": "playwrightautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "env:prodLoginTest": "cross-env test_env=prod npx playwright test tests/Login. --grep @regression --project=chrome --reporter=line,allure-playwright",
+    "env:prodWalletTest": "cross-env test_env=prod npx playwright test tests/wallet. --project=chrome --reporter=line,allure-playwright",
+    "env:prodPlanTest": "cross-env test_env=prod npx playwright test tests/plan. --project=chrome --reporter=line,allure-playwright",
+    "env:prodRegressionTest": "cross-env test_env=prod npx playwright test tests/plan. --project=firefox --reporter=line,allure-playwright"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^9.0.3",
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.7.5",
+    "allure-playwright": "^3.0.5",
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.0.1",
+    "dotenv": "^16.4.5"
+  }
+}

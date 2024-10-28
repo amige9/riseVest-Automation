@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Mon Oct 28 21:55:44 WAT 2024","Mon Oct 28 21:57:26 WAT 2024","102492","firefox","plan.spec.js","","","","Create a Valid Plan Test",""
+"passed","Mon Oct 28 15:29:17 WAT 2024","Mon Oct 28 15:30:54 WAT 2024","96751","chrome","plan.spec.js","","","","Create a Valid Plan Test",""
+"passed","Mon Oct 28 15:29:17 WAT 2024","Mon Oct 28 15:30:45 WAT 2024","87910","Microsoft Edge","plan.spec.js","","","","Create a Valid Plan Test",""
