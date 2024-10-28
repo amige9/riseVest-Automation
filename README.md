@@ -98,7 +98,7 @@ The package.json includes scripts for running specific tests in different enviro
 <br>
 
 ## Generating Reports
-This project is set up to generate reports using [Allure Playwright Reporter)(https://allurereport.org/docs/playwright/): <br>
+This project is set up to generate reports using [Allure Playwright Reporter](https://allurereport.org/docs/playwright/): <br>
 1. Generate Allure Report
    ```markdown
    allure generate ./allure-results --clean
