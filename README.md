@@ -12,5 +12,7 @@ This project is an end-to-end test automation suite using Playwright for testing
 * Generating Reports
 * Configuration
 <br>
-Project Structure <br>
+## Project Structure <br>
 The key files and folders in this project include:
+<br>
+## Prerequisites
