@@ -42,12 +42,18 @@ class LoginPage {
     async acceptNotification(){
         // const browserName = browser.browserType();
         // console.log(browserName)
-        // if (browserName === 'firefox') {
-        //     // Handle any extra prompt that might appear only in Firefox
-        //     this.page.on('dialog', dialog => dialog.accept());
-        // }
+        // console.log(`Running acceptNotification. Browser: ${browserName}`); // Debugging output
+
         await this.notifcationButton.click();
+        // if (browserName === 'firefox') {
+        //     this.page.on('dialog', async dialog => {
+        //         console.log('Dialog detected, accepting...');
+        //         await dialog.accept();
+        //     });
+        // }
         await this.acceptNotifcationButton.click();
+
+       
     }
 
     // Assertion to verify the error message is displayed for invalid login attempts
@@ -74,7 +80,7 @@ class LoginPage {
     }
 
     //Reusable Login Function
-    async loginAsUser(email, password, expectedTitle, expectedUrl, notificationAction=false) {
+    async loginAsUser(email, password, expectedTitle, expectedUrl,notificationAction=false) {
         await this.goTo(process.env.BASEURL);
         await this.login(email, password);
         await this.assertLoggedInSuccessfully(expectedTitle, expectedUrl);
@@ -89,3 +95,5 @@ class LoginPage {
 
 // Exporting the LoginPage class for use in other modules
 module.exports = { LoginPage };
+
+

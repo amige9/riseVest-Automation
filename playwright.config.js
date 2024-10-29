@@ -40,19 +40,6 @@ const config = {
       }
     },
     {
-      name: 'firefox',
-      use: {
-        browserName : 'firefox',
-        headless : false
-      //   screenshot: 'on',
-      //   video: 'retain-on-failure',
-      //   trace: 'on',
-      //   // viewport : {width:720, height:720},
-      //   ignoreHTTPSErrors: true,
-      //   permissions: ['geolocation']
-      }
-    },
-    {
       name: 'Microsoft Edge',
       use: {
         // browserName : 'Microsoft Edge',

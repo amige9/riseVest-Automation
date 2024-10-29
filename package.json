@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "env:prodLoginTest": "cross-env test_env=prod npx playwright test tests/Login. --grep @regression --project=chrome --reporter=line,allure-playwright",
-    "env:prodWalletTest": "cross-env test_env=prod npx playwright test tests/wallet. --project=chrome --reporter=line,allure-playwright",
-    "env:prodPlanTest": "cross-env test_env=prod npx playwright test tests/plan. --project=chrome --reporter=line,allure-playwright",
-    "env:prodRegressionTest": "cross-env test_env=prod npx playwright test tests/plan. --project=firefox --reporter=line,allure-playwright"
+    "env:prodLoginTest": "cross-env test_env=prod npx playwright test tests/Login. --reporter=line,allure-playwright",
+    "env:prodWalletTest": "cross-env test_env=prod npx playwright test tests/wallet. --reporter=line,allure-playwright",
+    "env:prodPlanTest": "cross-env test_env=prod npx playwright test tests/plan. --reporter=line,allure-playwright",
+    "env:prodRegressionTest": "cross-env test_env=prod npx playwright test tests/plan. --reporter=line,allure-playwright"
   },
   "keywords": [],
   "author": "",
