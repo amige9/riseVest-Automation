@@ -77,7 +77,7 @@ Navigate to the helper folder > env > .env.prod to insert your login details <br
 <br>
 
 ## Scripts
-The package.json includes scripts for running specific tests in different environments and browsers(chrome, firefox, edge):
+The package.json includes scripts for running specific tests in different environments and browsers(chrome, edge):
 * Run Login Tests:
      ```markdown
    npm run env:prodLoginTest
@@ -115,7 +115,7 @@ This project is set up to generate reports using [Allure Playwright Reporter](ht
 The playwright.config.js file includes settings like:
 * timeout: Maximum time a test can run (set to 120 seconds).
 * expect: Configurations for assertion timeouts.
-* projects: Defines browsers and configurations for running tests in Chrome, Firefox, and Edge.
+* projects: Defines browsers and configurations for running tests in Chrome, Edge.
 * reporter: Defines the type of report generated (HTML by default).
 * use: Shared settings for all tests, like enabling screenshots, trace, and video capture.
 
